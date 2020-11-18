@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jealvarez.todoapp.api.repositories.TaskRepository">
+
+    <select id="findAll" resultType="org.jealvarez.todoapp.api.domain.Task">
+        SELECT *
+        FROM task
+    </select>
+
+    <select id="findById" parameterType="long" resultType="org.jealvarez.todoapp.api.domain.Task">
+        SELECT *
+        FROM task
+        WHERE id = #{id}
+    </select>
+
+    <insert id="save" parameterType="org.jealvarez.todoapp.api.domain.Task" keyColumn="id" keyProperty="id" useGeneratedKeys="true">
+        INSERT INTO task (name, description)
+        VALUES (#{name}, #{description})
+    </insert>
+
+    <delete id="delete" parameterType="long">
+        DELETE FROM task
+        WHERE id = #{id}
+    </delete>
+
+    <update id="update" parameterType="org.jealvarez.todoapp.api.domain.Task">
+        UPDATE task
+        SET name = #{name},
+            description = #{description}
+        WHERE id = #{id}
+    </update>
+
+</mapper>
