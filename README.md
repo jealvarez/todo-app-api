@@ -1,6 +1,6 @@
 # **Todo App UI**
 
-Used to store tasks to a todo application through an API using Keycloak as authentication and authorization provider.
+Todo API to store tasks using Keycloak as authentication and authorization provider.
 
 ## **Author**
 
