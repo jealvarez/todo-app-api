@@ -14,6 +14,8 @@ Jorge Alvarez <alvarez.jeap@gmail.com>
 
 ## **Playground**
 
+- Add alias IP `192.168.99.1` to loopback inteface
+
 - Start backing services
 
 ```sh
