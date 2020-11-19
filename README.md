@@ -19,13 +19,13 @@ Jorge Alvarez <alvarez.jeap@gmail.com>
 - Start backing services
 
 ```sh
- ./scripts/bash/run-backing-services.sh
+./scripts/bash/run-backing-services.sh
 ```
 
 - Init database configuration
 
 ```sh
- ./scripts/bash/init-database.sh
+./scripts/bash/init-database.sh
 ```
 
 - Compile
